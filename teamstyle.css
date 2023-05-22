@@ -1,0 +1,66 @@
+html, body {
+    margin: 0; padding: 0;
+    height: 100%;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+    justify-content: space-between;
+  }
+  .box {
+      margin: auto;
+      padding: auto;
+      margin-bottom: 1em; /* div 사이의 여백을 조절합니다 */
+      width: calc(50% - 0.5em); /* 한 줄에 2개의 div를 표시하고, div 사이에 여백을 제외한 너비를 설정합니다 */
+      max-width: 300px;
+  }
+  .nextpage:hover {
+    color:red;
+  }
+  li{line-height:5px;}
+  #text_center{text-align:center;}
+  img{
+    width:320px;
+    height:420px;
+  }
+  .hi {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap:0.5em;
+    flex-direction:column;
+  }
+  .nav {
+    margin:auto;
+    padding: auto;
+    text-align:center;
+  }
+
+  /*장르 목록*/
+  .genre {
+    display: flex;
+    list-style: none;
+    margin: auto; padding: auto;
+    gap: 0.5em;
+  }
+
+  .genre li {
+    display:flex;
+    text-align: center;
+    color: black;
+    margin:auto;
+    padding:auto;
+    flex-direction:row;
+  }
+  .hashtag{color:gray;}
+  @media only screen and (max-width: 768px) {
+  /* 스마트 폰 */
+	.container {	flex-wrap: wrap;}
+  .box{width: calc(50% - 0.5em);
+    margin-bottom: 1em;}
+  .box .image{width:100%;
+      height:auto;
+  }
+}
+
